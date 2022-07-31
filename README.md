@@ -1,6 +1,6 @@
 ![image](https://img.shields.io/badge/Version-0.0.0-red)
 ![image](https://img.shields.io/badge/license-MIT-green)
-
+![image](https://img.shields.io/badge/Lines_of_code-2.9k-black)
 
 
 # What is CSLog?
