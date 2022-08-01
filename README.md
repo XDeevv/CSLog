@@ -1,7 +1,7 @@
 ![image](https://img.shields.io/badge/Version-0.0.0-red)
 ![image](https://img.shields.io/badge/license-MIT-green)
 ![image](https://img.shields.io/badge/Lines_of_code-2.9k-black)
-![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=XarisDev&show_icons=true)
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=vp10gr&show_icons=true)
 
 
 # What is CSLog?
