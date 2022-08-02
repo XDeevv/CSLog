@@ -12,6 +12,10 @@ CSLog is a simple logging library for `c#` and other `.net` applications like `v
 - 🌐 Download for NuGet: `not up yet`
 - 💿 Download from the releases tab: https://github.com/vp10gr/CSLog/releases/
 
+#### Instructions:
+- Download CSLog.dll
+- Make it a dependency in your project
+- Add ``using CSLog;`` on your main script
  
 
 # Examples 
