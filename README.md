@@ -31,8 +31,6 @@ else
 ### Logging abilities 
 
 ```cs
-using CSLog;
-
 CSLConsole.Log(Types.Info, "MyLog", ConsoleColor.DarkGreen, "This is my info log");
 CSLConsole.Log(Types.Info, "MyLog", ConsoleColor.DarkGreen, "This is my info log", "w/ second text");
 CSLConsole.Log(Types.Warning, "MyLog", ConsoleColor.DarkGreen, "This is my warning log");
