@@ -19,22 +19,12 @@ CSLog is a simple logging library for `c#` and other `.net` applications like `v
 ### User input
 
 ```cs
-using CSLog;
-namespace DemoApp
-{
-    public class Program
-    { 
-        public static void Main(string[] args)
-        {
-            Console.WriteLine();
-            CSLQuestion.Ask("Yes or no");
-            if (CSLQuestion.UAnswer == CSLQuestion.Answer.Yes)
-                CSLConsole.Log(Types.Info, $"Answer: Yes", $"{{{CSLQuestion.WAnswer}, {CSLQuestion.UAnswer}}}");
-            else
-                CSLConsole.Log(Types.Warning, $"Answer: No", $"{{{CSLQuestion.WAnswer}, {CSLQuestion.UAnswer}}}");
-        }
-    }
-}
+Console.WriteLine();
+CSLQuestion.Ask("Question", ConsoleColor.DarkRed, "Yes or no?"); //Pattern: string log name, color log color, string message 
+if (CSLQuestion.UAnswer == CSLQuestion.Answer.Yes) //UAnswer = users answer, enum Answer
+   CSLConsole.Log(Types.Info, "Answer", ConsoleColor.DarkGreen, $"{{{CSLQuestion.WAnswer}, {CSLQuestion.UAnswer}}}"); //Code here
+else
+   CSLConsole.Log(Types.Info, "Answer", ConsoleColor.DarkGreen, $"{{{CSLQuestion.WAnswer}, {CSLQuestion.UAnswer}}}"); //Code here
 
 ```
 
@@ -43,21 +33,12 @@ namespace DemoApp
 ```cs
 using CSLog;
 
-namespace DemoApp
-{
-    public class Program
-    { 
-        public static void Main(string[] args)
-        {
-            CSLConsole.Log(Types.Info, "This is an info message");
-            CSLConsole.Log(Types.Info, "This is an info message", "With second text");
-            CSLConsole.Log(Types.Warning, "This is an warning message");
-            CSLConsole.Log(Types.Warning, "This is an warning message", "With second text");
-            CSLConsole.Log(Types.Error, "This is an error message");
-            CSLConsole.Log(Types.Error, "This is an error message", "With second text");
-        }
-    }
-}
+CSLConsole.Log(Types.Info, "MyLog", ConsoleColor.DarkGreen, "This is my info log");
+CSLConsole.Log(Types.Info, "MyLog", ConsoleColor.DarkGreen, "This is my info log", "w/ second text");
+CSLConsole.Log(Types.Warning, "MyLog", ConsoleColor.DarkGreen, "This is my warning log");
+CSLConsole.Log(Types.Warning, "MyLog", ConsoleColor.DarkGreen, "This is my warning log", "w/ second text");
+CSLConsole.Log(Types.Error, "MyLog", ConsoleColor.DarkGreen, "This is my error log");
+CSLConsole.Log(Types.Error, "MyLog", ConsoleColor.DarkGreen, "This is my error log", "w/ second text");
 
 ```
 
@@ -65,18 +46,7 @@ namespace DemoApp
 ### Clear console
 
 ```cs
-using CSLog;
-
-namespace DemoApp
-{
-    public class Program
-    { 
-        public static void Main(string[] args)
-        {
-            CSLConsole.Clear(5000); //It clears the console in 5 seconds
-        }
-    }
-}
+CSLConsole.Clear(5000); //It clears the console in 5 seconds
 
 ```
 
