@@ -10,7 +10,7 @@ CSLog is a simple logging library for `c#` and other `.net` applications like `v
 
 #### Download:
 - 🌐 Download for NuGet: `not up yet`
-- 💿 Download from the releases tab: https://github.com/vp10gr/CSLog/releases/tag/CSL
+- 💿 Download from the releases tab: https://github.com/vp10gr/CSLog/releases/
 
  
 
