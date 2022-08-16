@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace CSLog
 {
-    class InvalidTypeException : Exception { }
+    class InvalidTypeException : Exception { /*IDK*/ }
 }
