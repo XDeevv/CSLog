@@ -16,6 +16,8 @@ CSLog is a simple logging library for `c#` and other `.net` applications like `v
 - Download CSLog.dll
 - Make it a dependency in your project
 - Add ``using CSLog;`` on your main script
+
+![img](https://cdn.discordapp.com/attachments/910436116811878410/1009127657700597820/mut.png)
  
 
 # Examples 
