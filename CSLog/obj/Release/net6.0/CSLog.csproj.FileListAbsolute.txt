@@ -1,0 +1,12 @@
+D:\PROGRAMMING\repos\CSLog\CSLog\bin\Release\net6.0\CSLog.deps.json
+D:\PROGRAMMING\repos\CSLog\CSLog\bin\Release\net6.0\CSLog.dll
+D:\PROGRAMMING\repos\CSLog\CSLog\bin\Release\net6.0\CSLog.pdb
+D:\PROGRAMMING\repos\CSLog\CSLog\obj\Release\net6.0\CSLog.csproj.AssemblyReference.cache
+D:\PROGRAMMING\repos\CSLog\CSLog\obj\Release\net6.0\CSLog.GeneratedMSBuildEditorConfig.editorconfig
+D:\PROGRAMMING\repos\CSLog\CSLog\obj\Release\net6.0\CSLog.AssemblyInfoInputs.cache
+D:\PROGRAMMING\repos\CSLog\CSLog\obj\Release\net6.0\CSLog.AssemblyInfo.cs
+D:\PROGRAMMING\repos\CSLog\CSLog\obj\Release\net6.0\CSLog.csproj.CoreCompileInputs.cache
+D:\PROGRAMMING\repos\CSLog\CSLog\obj\Release\net6.0\CSLog.dll
+D:\PROGRAMMING\repos\CSLog\CSLog\obj\Release\net6.0\refint\CSLog.dll
+D:\PROGRAMMING\repos\CSLog\CSLog\obj\Release\net6.0\CSLog.pdb
+D:\PROGRAMMING\repos\CSLog\CSLog\obj\Release\net6.0\ref\CSLog.dll
