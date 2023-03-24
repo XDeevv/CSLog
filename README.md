@@ -22,18 +22,6 @@ CSLog is a simple logging library for `c#` and other `.net` applications like `v
 
 # Examples 
 
-### User input
-
-```cs
-Console.WriteLine();
-CSLQuestion.Ask("Question", ConsoleColor.DarkRed, "Yes or no?"); //Pattern: string log name, color log color, string message 
-if (CSLQuestion.UAnswer == CSLQuestion.Answer.Yes) //UAnswer = users answer, enum Answer
-   CSLConsole.Log(Types.Info, "Answer", ConsoleColor.DarkGreen, $"{{{CSLQuestion.WAnswer}, {CSLQuestion.UAnswer}}}"); //Code here
-else
-   CSLConsole.Log(Types.Info, "Answer", ConsoleColor.DarkGreen, $"{{{CSLQuestion.WAnswer}, {CSLQuestion.UAnswer}}}"); //Code here
-
-```
-
 ### Logging abilities 
 
 ```cs
@@ -43,14 +31,6 @@ CSLConsole.Log(Types.Warning, "MyLog", ConsoleColor.DarkGreen, "This is my warni
 CSLConsole.Log(Types.Warning, "MyLog", ConsoleColor.DarkGreen, "This is my warning log", "w/ second text");
 CSLConsole.Log(Types.Error, "MyLog", ConsoleColor.DarkGreen, "This is my error log");
 CSLConsole.Log(Types.Error, "MyLog", ConsoleColor.DarkGreen, "This is my error log", "w/ second text");
-
-```
-
-
-### Clear console
-
-```cs
-CSLConsole.Clear(5000); //It clears the console in 5 seconds
 
 ```
 
