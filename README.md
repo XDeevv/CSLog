@@ -20,19 +20,16 @@ CSLog is a simple logging library for `c#` and other `.net` applications like `v
 ![img](https://cdn.discordapp.com/attachments/1042808931434639491/1088899007641829417/cslscreenshot.png)
  
 
-# Examples 
+# Examples
 
 ### Logging abilities 
 
 ```cs
-CSLConsole.Log(Types.Info, "MyLog", ConsoleColor.DarkGreen, "This is my info log");
-CSLConsole.Log(Types.Info, "MyLog", ConsoleColor.DarkGreen, "This is my info log", "w/ second text");
-CSLConsole.Log(Types.Warning, "MyLog", ConsoleColor.DarkGreen, "This is my warning log");
-CSLConsole.Log(Types.Warning, "MyLog", ConsoleColor.DarkGreen, "This is my warning log", "w/ second text");
-CSLConsole.Log(Types.Error, "MyLog", ConsoleColor.DarkGreen, "This is my error log");
-CSLConsole.Log(Types.Error, "MyLog", ConsoleColor.DarkGreen, "This is my error log", "w/ second text");
-
+CSLogger.Log(Types.Debug, "Debug log");
+CSLogger.Log(Types.Info, "Info log");
+CSLogger.Log(Types.Warning, "Warning log");
+CSLogger.Log(Types.Error, "Error log");
+CSLogger.Log(Types.Critical, "Critical log");
 ```
-
 ---
 © 2022 XarisDev
