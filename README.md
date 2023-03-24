@@ -31,7 +31,7 @@ CSLogger.Log(Types.Warning, "Warning log");
 CSLogger.Log(Types.Error, "Error log");
 CSLogger.Log(Types.Critical, "Critical log");
 ```
-# Create custom logs
+### Create custom logs
 ```cs
 CSLCustom pattern = new CSLCustom("<BG=DarkBlue><FG=Yellow>{Timestamp} <FG=Red>[CUSTOM] <FG=Gray>: <FG=Green>{Message}");
 CSLogger.LogWithCustomProfile(pattern, "Custom log");
