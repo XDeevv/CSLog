@@ -39,6 +39,7 @@ CSLogger.LogWithCustomProfile(pattern, "Custom log");
 - Use ``{Timestamp}`` and ``{Message}`` to define where the timestamp and the message goes
 - Use the ``<BG=Color>`` and the ``<FG=Color>`` tag to define the log colors
 - You can also use the ``<RS>`` Tag to reset the colors
+
 ![img](https://cdn.discordapp.com/attachments/1042808931434639491/1088901126524506302/image.png)
 ---
 © 2022 XDev
