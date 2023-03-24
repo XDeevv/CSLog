@@ -1,6 +1,6 @@
 ![image](https://img.shields.io/badge/Version-0.0.0-red)
 ![image](https://img.shields.io/badge/license-MIT-green)
-![image](https://img.shields.io/badge/Lines_of_code-2.9k-black)
+![image](https://img.shields.io/badge/Lines_of_code-4.7k-black)
 
 
 # What is CSLog?
@@ -36,6 +36,9 @@ CSLogger.Log(Types.Critical, "Critical log");
 CSLCustom pattern = new CSLCustom("<BG=DarkBlue><FG=Yellow>{Timestamp} <FG=Red>[CUSTOM] <FG=Gray>: <FG=Green>{Message}");
 CSLogger.LogWithCustomProfile(pattern, "Custom log");
 ```
-
+- Use ``{Timestamp}`` and ``{Message}`` to define where the timestamp and the message goes
+- Use the ``<BG=Color>`` and the ``<FG=Color>`` tag to define the log colors
+- You can also use the ``<RS>`` Tag to reset the colors
+![img](https://cdn.discordapp.com/attachments/1042808931434639491/1088901126524506302/image.png)
 ---
 © 2022 XDev
