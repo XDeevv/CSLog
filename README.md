@@ -4,7 +4,7 @@
 
 
 # What is CSLog?
-CSLog is a simple logging library for `c#` and other `.net` applications like `visual basic`. Its made using no third-party libraries and it even has a built in input (question) system. Its open source and completely free to use and modify
+CSLog is a simple logging library for `c#` and other `.net` applications like `visual basic`. Its made using no third-party libraries. Its open source and completely free to use and modify
 
 
 
