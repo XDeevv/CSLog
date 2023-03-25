@@ -1,5 +1,5 @@
 ![image](https://img.shields.io/badge/Version-2.0.1-red)
-![image](https://img.shields.io/badge/License-MIT-green)
+![image](https://img.shields.io/badge/License-GPL_3.0-green)
 ![image](https://img.shields.io/badge/Lines_of_code-4.7k-blue)
 
 
