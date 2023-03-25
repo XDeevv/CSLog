@@ -1,6 +1,6 @@
-![image](https://img.shields.io/badge/Version-0.0.0-red)
-![image](https://img.shields.io/badge/license-MIT-green)
-![image](https://img.shields.io/badge/Lines_of_code-4.7k-black)
+![image](https://img.shields.io/badge/Version-2.0.1-red)
+![image](https://img.shields.io/badge/License-MIT-green)
+![image](https://img.shields.io/badge/Lines_of_code-4.7k-blue)
 
 
 # What is CSLog?
@@ -9,13 +9,14 @@ CSLog is a simple logging library for `c#` and other `.net` applications like `v
 
 
 #### Download:
-- 🌐 Download for NuGet: `not up yet`
+- 🌐 Download from NuGet: `not up yet`
 - 💿 Download from the releases tab: https://github.com/vp10gr/CSLog/releases/
 
 #### Instructions:
-- Download CSLog.dll
+- Download ``CSLog.dll``
 - Make it a dependency in your project
 - Add ``using CSLog;`` on your main script
+- You can skip the first two parts if you download it from ``NuGet``
 
 ![img](https://cdn.discordapp.com/attachments/1042808931434639491/1088899007641829417/cslscreenshot.png)
  
