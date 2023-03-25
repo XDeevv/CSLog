@@ -18,7 +18,7 @@ CSLog is a simple logging library for `c#` and other `.net` applications like `v
 - Add ``using CSLog;`` on your main script
 - You can skip the first two parts if you download it from ``NuGet``
 
-![img](https://cdn.discordapp.com/attachments/1042808931434639491/1088899007641829417/cslscreenshot.png)
+![img](https://cdn.discordapp.com/attachments/936652528966320168/1089170709722439700/image.png)
  
 
 # Examples
@@ -42,6 +42,6 @@ CSLogger.LogWithCustomProfile(pattern, "Custom log");
 - Use the ``<BG=Color>`` and the ``<FG=Color>`` tag to define the log colors
 - You can also use the ``<RS>`` Tag to reset the colors
 
-![img](https://cdn.discordapp.com/attachments/1042808931434639491/1088901126524506302/image.png)
+![img](https://cdn.discordapp.com/attachments/936652528966320168/1089170767121494036/image.png)
 ---
 © 2023 XDev
