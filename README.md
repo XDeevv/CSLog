@@ -38,6 +38,7 @@ CSLCustom pattern = new CSLCustom("<BG=DarkBlue><FG=Yellow>{Timestamp} <FG=Red>[
 CSLogger.LogWithCustomProfile(pattern, "Custom log");
 ```
 - Use ``{Timestamp}`` and ``{Message}`` to define where the timestamp and the message goes
+- Add a ``,`` next to the title and then use ``{EX=number}`` to set the text it must start with a ``0``
 - Use the ``<BG=Color>`` and the ``<FG=Color>`` tag to define the log colors
 - You can also use the ``<RS>`` Tag to reset the colors
 
