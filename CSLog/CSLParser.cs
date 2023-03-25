@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CSLog.Parsing
@@ -10,24 +11,42 @@ namespace CSLog.Parsing
 	{
 		public static void ParseString(string str)
 		{
-			ConsoleColor fgcolor;
-			ConsoleColor bgcolor;
-
 			if (string.IsNullOrEmpty(str))
 				return;
 
-			string[] splitted = str.Split('<', '>');
-			foreach (var clr in splitted)
+			var splitted = Regex.Split(str, @"(<[^>]+>)");
+
+			var currentForegroundColor = Console.ForegroundColor;
+			var currentBackgroundColor = Console.BackgroundColor;
+
+			foreach (var tag in splitted)
 			{
-				if (clr.StartsWith("RS"))
+				if (string.IsNullOrEmpty(tag))
+					continue;
+
+				if (tag.StartsWith("<RS>"))
+				{
 					Console.ResetColor();
-				else if (clr.StartsWith("FG=") && Enum.TryParse(clr.Substring(3), out fgcolor))
-					Console.ForegroundColor = fgcolor;
-				else if (clr.StartsWith("BG=") && Enum.TryParse(clr.Substring(3), out bgcolor))
-					Console.BackgroundColor = bgcolor;
-				else
-					Console.Write(clr);
+					continue;
+				}
+
+				var match = Regex.Match(tag, @"<FG=(\w+)>", RegexOptions.IgnoreCase);
+				if (match.Success && Enum.TryParse(match.Groups[1].Value, true, out ConsoleColor fgColor))
+				{
+					Console.ForegroundColor = fgColor;
+					continue;
+				}
+
+				match = Regex.Match(tag, @"<BG=(\w+)>", RegexOptions.IgnoreCase);
+				if (match.Success && Enum.TryParse(match.Groups[1].Value, true, out ConsoleColor bgColor))
+				{
+					Console.BackgroundColor = bgColor;
+					continue;
+				}
+
+				Console.Write(tag);
 			}
+
 			Console.ResetColor();
 		}
 		public static void ParseStringWithLine(string str)
