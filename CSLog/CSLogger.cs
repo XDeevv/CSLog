@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,15 +28,30 @@ namespace CSLog
             CSLParser.ParseStringWithLine(ret);
 		}
 
-        public static void LogWithCustomProfile(CSLCustom customprofile, string Message)
-        {
+		public static void LogWithCustomProfile(CSLCustom customprofile, string Message, params string[] Extra)
+		{
 			string datetime = DateTime.Now.ToString("h:mm:ss tt");
-            string input = customprofile.pattern;
+			string input = customprofile.pattern;
 
-            string output = input.Replace("{Message}", Message).Replace("{Timestamp}", datetime); ;
+			string output = input.Replace("{Message}", Message).Replace("{Timestamp}", datetime);
+
+			for (int i = 0; i < Extra.Length; i++)
+			{
+				string exKey = "{EX=" + i.ToString() + "}";
+				if (input.Contains(exKey))
+				{
+					int exValue;
+					if (int.TryParse(Extra[i], out exValue))
+						output = output.Replace(exKey, exValue.ToString());
+					else
+						output = output.Replace(exKey, Extra[i]);
+				}
+			}
 
 			CSLParser.ParseStringWithLine(output);
 		}
 
-    }
+
+	}
 }
+
