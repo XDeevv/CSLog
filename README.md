@@ -34,8 +34,8 @@ CSLogger.Log(Types.Critical, "Critical log");
 ```
 ### Create custom logs
 ```cs
-CSLCustom pattern = new CSLCustom("<BG=DarkBlue><FG=Yellow>{Timestamp} <FG=Red>[CUSTOM] <FG=Gray>: <FG=Green>{Message}");
-CSLogger.LogWithCustomProfile(pattern, "Custom log");
+CSLCustom pattern = new CSLCustom("<FG=DarkGray>{Timestamp} <RS>[<FG={EX=3}>{EX=2}<RS>] | <BG={EX=1}><FG=Black>{EX=0}<RS> | : {Message}");
+CSLogger.LogWithCustomProfile(pattern, "Custom log", "Server", "Blue", "Custom", "Magenta");
 ```
 - Use ``{Timestamp}`` and ``{Message}`` to define where the timestamp and the message goes
 - Add a ``,`` next to the title and then use ``{EX=number}`` to set the text it must start with a ``0``
