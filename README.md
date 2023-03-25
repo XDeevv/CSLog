@@ -43,4 +43,4 @@ CSLogger.LogWithCustomProfile(pattern, "Custom log");
 
 ![img](https://cdn.discordapp.com/attachments/1042808931434639491/1088901126524506302/image.png)
 ---
-© 2022 XDev
+© 2023 XDev
